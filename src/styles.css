@@ -167,7 +167,7 @@ main {
   position: absolute;
   inset: 74px 0 auto;
   height: 560px;
-  background: url("../assets/Pj5_p1_bg.png") center top / min(1340px, 160vw) auto no-repeat;
+  background: url("/assets/Pj5_p1_bg.png") center top / min(1340px, 160vw) auto no-repeat;
   opacity: 0.86;
   pointer-events: none;
 }
@@ -412,7 +412,7 @@ section {
   display: grid;
   place-items: center;
   text-align: center;
-  background: url("../assets/Pj5_p4_bg.png") center / cover no-repeat;
+  background: url("/assets/Pj5_p4_bg.png") center / cover no-repeat;
 }
 
 .quote h2 {
@@ -558,7 +558,7 @@ section {
   justify-items: center;
   text-align: center;
   overflow: hidden;
-  background: url("../assets/Pj5_p8_bgc.png") center / cover no-repeat;
+  background: url("/assets/Pj5_p8_bgc.png") center / cover no-repeat;
 }
 
 .newsletter-panel h2 {

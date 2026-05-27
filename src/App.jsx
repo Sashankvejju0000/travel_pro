@@ -21,26 +21,26 @@ const navItems = [
 ];
 
 const services = [
-  ['Flights', 'World-class airlines and flexible routes around the globe.', 'assets/Pj5_p2_ic1.png'],
-  ['Hotels', 'Verified hotels and dreamy stays that feel effortless.', 'assets/Pj5_p2_ic2.png'],
-  ['Transport', 'Local rides, transfers, and rentals for smooth arrivals.', 'assets/Pj5_p2_ic3.png'],
-  ['Activities', 'Curated night tours, skyline views, and local adventures.', 'assets/Pj5_p2_ic4.png'],
+  ['Flights', 'World-class airlines and flexible routes around the globe.', '/assets/Pj5_p2_ic1.png'],
+  ['Hotels', 'Verified hotels and dreamy stays that feel effortless.', '/assets/Pj5_p2_ic2.png'],
+  ['Transport', 'Local rides, transfers, and rentals for smooth arrivals.', '/assets/Pj5_p2_ic3.png'],
+  ['Activities', 'Curated night tours, skyline views, and local adventures.', '/assets/Pj5_p2_ic4.png'],
 ];
 
 const destinations = [
-  ['Paris, France', '$899', 'assets/paris.png'],
-  ['Tokyo, Japan', '$899', 'assets/tokyo.png'],
-  ['Bali, Indonesia', '$899', 'assets/bali.png'],
-  ['Santorini, Greece', '$899', 'assets/santorini.png'],
-  ['Maldives', '$899', 'assets/maldives.png'],
-  ['Dubai, UAE', '$899', 'assets/dubai.png'],
+  ['Paris, France', '$899', '/assets/paris.png'],
+  ['Tokyo, Japan', '$899', '/assets/tokyo.png'],
+  ['Bali, Indonesia', '$899', '/assets/bali.png'],
+  ['Santorini, Greece', '$899', '/assets/santorini.png'],
+  ['Maldives', '$899', '/assets/maldives.png'],
+  ['Dubai, UAE', '$899', '/assets/dubai.png'],
 ];
 
 const stories = [
-  ['7 Nights in Iceland - What I Learned', 'Northern lights, hot springs, and quiet midnight roads.', 'Dec 8, 2025', '4 min read', 'assets/Pj5_p6_ic1.png'],
-  ['Top 5 Starry Night Destinations', 'Where to find the clearest skies and unforgettable views.', 'Jan 15, 2026', '5 min read', 'assets/Pj5_p6_ic2.png'],
-  ['Night Photography Travel Guide', 'Capture glowing streets, stars, and city lights like a pro.', 'Feb 2, 2026', '6 min read', 'assets/Pj5_p6_ic1.png'],
-  ['Best City Lights Around The World', 'From neon avenues to romantic river reflections.', 'Mar 9, 2026', '5 min read', 'assets/Pj5_p6_ic2.png'],
+  ['7 Nights in Iceland - What I Learned', 'Northern lights, hot springs, and quiet midnight roads.', 'Dec 8, 2025', '4 min read', '/assets/Pj5_p6_ic1.png'],
+  ['Top 5 Starry Night Destinations', 'Where to find the clearest skies and unforgettable views.', 'Jan 15, 2026', '5 min read', '/assets/Pj5_p6_ic2.png'],
+  ['Night Photography Travel Guide', 'Capture glowing streets, stars, and city lights like a pro.', 'Feb 2, 2026', '6 min read', '/assets/Pj5_p6_ic1.png'],
+  ['Best City Lights Around The World', 'From neon avenues to romantic river reflections.', 'Mar 9, 2026', '5 min read', '/assets/Pj5_p6_ic2.png'],
 ];
 
 const faqs = [
@@ -65,8 +65,8 @@ function Header() {
     <>
       <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
         <a className="brand" href="#top" aria-label="WanderScape home">
-          <img src="assets/Pj5_nb_logo.png" alt="" />
-          <img className="brand-wordmark" src="assets/Pj5_nb_tt.png" alt="WanderScape" />
+          <img src="/assets/Pj5_nb_logo.png" alt="" />
+          <img className="brand-wordmark" src="/assets/Pj5_nb_tt.png" alt="WanderScape" />
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navItems.map(([label, href]) => (
@@ -74,7 +74,7 @@ function Header() {
           ))}
         </nav>
         <a className="book-image-link" href="#planner">
-          <img src="assets/Pj5_nb_bk.png" alt="Book now" />
+          <img src="/assets/Pj5_nb_bk.png" alt="Book now" />
         </a>
         <button className="icon-button menu-button" onClick={() => setOpen(true)} aria-label="Open menu">
           <Menu size={22} />
@@ -89,7 +89,7 @@ function Header() {
           <a key={label} href={href} onClick={() => setOpen(false)}>{label}</a>
         ))}
         <a href="#planner" onClick={() => setOpen(false)}>
-          <img src="assets/Pj5_nb_bk.png" alt="Book now" />
+          <img src="/assets/Pj5_nb_bk.png" alt="Book now" />
         </a>
       </aside>
     </>
@@ -197,7 +197,7 @@ function App() {
               <div>
                 <h3>{name}</h3>
                 <strong>{price}</strong>
-                <img className="reviews" src="assets/Pj5_p3_reviews.png" alt="Five star reviews" />
+                <img className="reviews" src="/assets/Pj5_p3_reviews.png" alt="Five star reviews" />
               </div>
             </article>
           ))}
@@ -214,12 +214,12 @@ function App() {
           <h2>Travel On The Go</h2>
           <p>WanderScape app gives you full control of your journey. Book, explore, and discover from anywhere in the world.</p>
           <div className="store-row">
-            <img src="assets/Pj5_p5_ic3.png" alt="Get it on Google Play" />
-            <img src="assets/Pj5_p5_ic4.png" alt="Download on the App Store" />
+            <img src="/assets/Pj5_p5_ic3.png" alt="Get it on Google Play" />
+            <img src="/assets/Pj5_p5_ic4.png" alt="Download on the App Store" />
           </div>
-          <img className="landmarks" src="assets/Pj5_p5_ic2.png" alt="Travel landmarks" />
+          <img className="landmarks" src="/assets/Pj5_p5_ic2.png" alt="Travel landmarks" />
         </div>
-        <img className="phone" src="assets/Pj5_p5_ic1.png" alt="WanderScape mobile app screens" />
+        <img className="phone" src="/assets/Pj5_p5_ic1.png" alt="WanderScape mobile app screens" />
       </section>
 
       <section className="stories" id="stories">
@@ -269,15 +269,15 @@ function App() {
             <input type="email" placeholder="Enter your email to join to glow" required />
             <button type="submit">Join Now</button>
           </form>
-          <img src="assets/Pj5_p8_bgi.png" alt="" />
+          <img src="/assets/Pj5_p8_bgi.png" alt="" />
         </div>
       </section>
 
       <footer className="footer" id="contact">
         <div className="footer-brand">
           <a className="brand" href="#top">
-            <img src="assets/Pj5_nb_logo.png" alt="" />
-            <img className="brand-wordmark" src="assets/Pj5_nb_tt.png" alt="WanderScape" />
+            <img src="/assets/Pj5_nb_logo.png" alt="" />
+            <img className="brand-wordmark" src="/assets/Pj5_nb_tt.png" alt="WanderScape" />
           </a>
           <p>Your gateway to extraordinary travel experiences that glow in the dark.</p>
         </div>
